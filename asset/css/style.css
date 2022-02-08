@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 img {
   max-width: 100%;
 }
@@ -21,6 +25,7 @@ ul {
   top: 0;
   right: 0;
   margin-top: 10px;
+  z-index: 2;
 }
 
 .navbar ul li {
@@ -38,7 +43,42 @@ ul {
   font-weight: 900;
 }
 
-.first-page {
+.bg {
   height: 100vh;
+  position: relative;
+}
+
+.bg-red {
   background-color: red;
+}
+
+.bg-green {
+  background-color: green;
+}
+
+.bg-yellow {
+  background-color: yellow;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+}
+
+.banner {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+}
+
+.text-y {
+  color: yellow;
+}
+
+.text-g {
+  color: green;
 }
